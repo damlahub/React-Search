@@ -2,7 +2,7 @@ import { useState } from 'react';
 import searchImages from './api';
 import './App.css';
 import SearchHeader from './SearchHeader';
-import ImageList from './Components/ImagesList';
+import ImagesList from './Components/ImagesList';
 function App() {
   const [images, setImages] = useState([]);
   const handleSubmit= async (term)=>{
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <SearchHeader search={handleSubmit} />
-      <ImageList imagesPlaceholder={images} />
+      <ImagesList imagesPlaceholder={images} />
     </div>
   );
 }

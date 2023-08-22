@@ -4,10 +4,10 @@ function SearchHeader({search}) {
     const handleFormSubmit=(event)=>{
         event.preventDefault();
         debugger;
-        search("damla");
+        search(value);
     }
-    const handleChange=(e)=>{
-        setValue(e.target.value);
+    const handleChange=(event)=>{
+        setValue(event.target.value);
     };
     return ( 
         <div className="search-container">
